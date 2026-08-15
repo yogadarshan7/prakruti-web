@@ -1,6 +1,6 @@
 # prakruti-web
 
-Ayurvedic Prakruti determination web application built with React, TypeScript, and Vite.
+Web companion for [Prakruti Yogashala](https://prakrutiyogashala.com) — Ayurvedic Prakruti assessment and brand-aligned landing experience built with React, TypeScript, and Vite.
 
 ## Development
 
