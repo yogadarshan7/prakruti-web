@@ -12,14 +12,16 @@ export function Header() {
           />
         </a>
         <nav className="site-nav" aria-label="Primary">
-          <a href="#prakruti">Prakruti Assessment</a>
-          <a href="#pillars">Our Approach</a>
-          <a href={BRAND.website} target="_blank" rel="noopener noreferrer">
-            Visit Full Site
+          <a href="#courses">Courses</a>
+          <a href="#why">Why Prakruti</a>
+          <a href="#living">Living</a>
+          <a href="#teachers">Teachers</a>
+          <a href="#faq">FAQ</a>
+          <a className="nav-cta" href={BRAND.whatsapp} target="_blank" rel="noopener noreferrer">
+            WhatsApp
           </a>
         </nav>
       </div>
-      <p className="header-badge">{BRAND.location}</p>
     </header>
   )
 }

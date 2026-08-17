@@ -1,8 +1,10 @@
 # prakruti-web
 
-Web companion for [Prakruti Yogashala](https://prakrutiyogashala.com) — Ayurvedic Prakruti assessment and brand-aligned landing experience built with React, TypeScript, and Vite.
+School website for [Prakruti Yogashala](https://www.prakrutiyogashala.com) — yoga teacher training in Tapovan, Rishikesh. React, TypeScript, and Vite.
 
-Agent instructions for copy, SEO, and conversion live in [`.cursor/skills/prakrutiyogashala-website/`](.cursor/skills/prakrutiyogashala-website/SKILL.md).
+This is the **school** site (100 / 200 / 300 hour TTC), not an Ayurveda constitution quiz. The name Prakruti Yogashala is the school.
+
+Agent copy rules live in [`.cursor/skills/prakrutiyogashala-website/`](.cursor/skills/prakrutiyogashala-website/SKILL.md).
 
 ## Development
 
@@ -11,7 +13,7 @@ npm ci
 npm run dev
 ```
 
-Open http://localhost:5173 to use the Prakruti assessment demo.
+Open http://localhost:5173
 
 ## Scripts
 

@@ -11,27 +11,14 @@ export function Footer() {
         />
         <p className="footer-tagline">{BRAND.address}</p>
         <div className="footer-links">
-          <a href={BRAND.website} target="_blank" rel="noopener noreferrer">
-            Yoga Teacher Training
-          </a>
-          <a
-            href="https://www.prakrutiyogashala.com/ayurveda-retreat"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Ayurveda Retreat
-          </a>
-          <a
-            href="https://www.prakrutiyogashala.com/about-us"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            About Us
-          </a>
+          <a href="#courses">Courses</a>
+          <a href="#teachers">Teachers</a>
+          <a href={`mailto:${BRAND.email}`}>{BRAND.email}</a>
+          <a href={`tel:${BRAND.phoneTel}`}>{BRAND.phoneDisplay}</a>
         </div>
         <p className="footer-copy">
-          © {new Date().getFullYear()} {BRAND.name}. Traditional yoga rooted in
-          Rishikesh.
+          © {new Date().getFullYear()} {BRAND.name}. Yoga teacher training
+          school in Rishikesh.
         </p>
       </div>
     </footer>

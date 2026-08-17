@@ -5,8 +5,8 @@ description: Improve Prakrutiyogashala.com (Prakruti Yogashala, Rishikesh yoga t
 
 # Prakruti Yogashala website
 
-Live site: [https://www.prakrutiyogashala.com](https://www.prakrutiyogashala.com)  
-Stack: WordPress. This repo does not contain the CMS. Improve by drafting copy, page specs, SEO, and CMS change lists the owner can paste in.
+Live WordPress site: [https://www.prakrutiyogashala.com](https://www.prakrutiyogashala.com)  
+This repo is a React rebuild of the **school** website (yoga teacher training in Rishikesh). Do not turn it into an Ayurveda dosha / “what is your Prakruti” quiz. Prakruti Yogashala is the school’s name.
 
 Before writing, read [facts.md](facts.md). Before rewriting a live page, read [known-issues.md](known-issues.md).
 
@@ -108,4 +108,4 @@ Work in this order unless they name a page:
 4. Fix about-us teacher chips and empty bios (Vikram Ji, Yogi Suraj).
 5. Technical: sitemap, titles, gallery location, form spam-decode UX.
 
-Draft the copy here; the owner pastes it into WordPress. If this repo later holds theme/code, edit that instead.
+When this repo holds the frontend, edit the React pages to match the school homepage: hero, proof, why us, 100/200/300 courses, living, teachers, FAQ, WhatsApp. Keep Body / Mind / Speech as teaching pillars, not a constitution test.
