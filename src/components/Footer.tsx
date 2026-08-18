@@ -11,7 +11,7 @@ export function Footer() {
         />
         <p className="footer-tagline">{BRAND.address}</p>
         <div className="footer-links">
-          <a href="#courses">Courses</a>
+          <a href="/#courses">Courses</a>
           <a href="#teachers">Teachers</a>
           <a href={`mailto:${BRAND.email}`}>{BRAND.email}</a>
           <a href={`tel:${BRAND.phoneTel}`}>{BRAND.phoneDisplay}</a>

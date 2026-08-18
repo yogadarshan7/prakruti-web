@@ -33,7 +33,7 @@ export function Courses() {
                 </dd>
               </div>
             </dl>
-            <a className="btn btn-primary" href={course.href}>
+            <a className="btn btn-primary" href={course.slug}>
               Course details
             </a>
           </article>

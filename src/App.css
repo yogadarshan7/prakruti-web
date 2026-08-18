@@ -60,6 +60,33 @@ main {
 
 .hero {
   padding: 1rem 0 3rem;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 1.5rem 2rem;
+  align-items: center;
+}
+
+.hero-photo {
+  margin: 0;
+}
+
+.hero-photo img,
+.course-hero-photo img,
+.gallery-grid img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--radius);
+}
+
+.hero-photo img {
+  min-height: 280px;
+  max-height: 420px;
+}
+
+.hero .stat-row {
+  grid-column: 1 / -1;
 }
 
 .hero h1 {
@@ -189,8 +216,124 @@ main {
 .living,
 .teachers,
 .faq,
-.enroll {
+.enroll,
+.gallery,
+.curriculum,
+.audience,
+.schedule,
+.apply,
+.course-page {
   padding: 1.5rem 0 2.5rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 0.65rem;
+}
+
+.gallery-grid figure {
+  margin: 0;
+  overflow: hidden;
+  border-radius: var(--radius);
+}
+
+.gallery-grid figure:nth-child(1) {
+  grid-column: span 3;
+}
+
+.gallery-grid figure:nth-child(2),
+.gallery-grid figure:nth-child(3) {
+  grid-column: span 3;
+}
+
+.gallery-grid figure:nth-child(n + 4) {
+  grid-column: span 2;
+}
+
+.gallery-grid img {
+  min-height: 160px;
+  max-height: 240px;
+}
+
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--white);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.schedule-table th,
+.schedule-table td {
+  text-align: left;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--brand-cream-dark);
+}
+
+.schedule-table thead th {
+  background: var(--brand-red);
+  color: var(--brand-cream);
+}
+
+.schedule-table tbody th {
+  width: 28%;
+  color: var(--brand-red);
+  font-weight: 600;
+}
+
+.apply-steps {
+  list-style: none;
+  margin: 0 0 1.25rem;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.step-num {
+  display: inline-flex;
+  width: 2rem;
+  height: 2rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--brand-red);
+  color: var(--white);
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.course-hero-photo {
+  margin: 0 0 1.5rem;
+}
+
+.course-hero-photo img {
+  max-height: 380px;
+}
+
+.course-page h1 {
+  margin: 0.35rem 0 0.75rem;
+  color: var(--brand-red);
+  font-size: clamp(1.8rem, 4vw, 2.75rem);
+}
+
+.course-page h2 {
+  margin: 1.5rem 0 0.5rem;
+  color: var(--brand-red);
+  font-size: 1.25rem;
+}
+
+.course-page-prices {
+  max-width: 28rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.course-extra {
+  margin: 0 0 1.5rem;
+  padding-left: 1.2rem;
+  color: var(--brand-muted);
 }
 
 .card-grid,
@@ -374,8 +517,21 @@ main {
 }
 
 @media (max-width: 720px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
   .stat-row {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery-grid,
+  .gallery-grid figure:nth-child(1),
+  .gallery-grid figure:nth-child(2),
+  .gallery-grid figure:nth-child(3),
+  .gallery-grid figure:nth-child(n + 4) {
+    grid-template-columns: 1fr;
+    grid-column: span 1;
   }
 
   .brand-logo {
